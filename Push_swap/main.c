@@ -6,7 +6,7 @@
 /*   By: inaranjo <inaranjo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 14:33:25 by inaranjo          #+#    #+#             */
-/*   Updated: 2023/03/31 11:14:35 by inaranjo         ###   ########.fr       */
+/*   Updated: 2023/03/31 15:33:01 by inaranjo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,15 @@ void print_list(t_stack *begin_list)
     }
     ft_printf("\n");
 }
+
+void distribute(t_stack **stacks, int ac)
+{
+    if (check_order_a(&stacks[0], ac) == 1)
+        return ;
+    else if (ac == 3)
+        sort3(stacks);
+}
+
 
 int main(int ac, char **av)
 {
@@ -50,14 +59,15 @@ int main(int ac, char **av)
         return(0);
     }
 
+    distribute(stacks,(ac - 1));
    
-    ft_printf("Stack_A\n");
+    /*ft_printf("Stack_A\n");
     print_list(stacks[0]);
 
     ft_printf("\n");
 
     ft_printf("Stack_B\n\n");
-    print_list(stacks[1]);
+    print_list(stacks[1]);*/
 
 
     free_list(stacks[0]);

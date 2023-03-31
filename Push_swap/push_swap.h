@@ -6,7 +6,7 @@
 /*   By: inaranjo <inaranjo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 14:40:03 by inaranjo          #+#    #+#             */
-/*   Updated: 2023/03/31 12:35:48 by inaranjo         ###   ########.fr       */
+/*   Updated: 2023/03/31 15:33:03 by inaranjo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,13 @@ void	rrr(t_stack **stacks);
 
 /*-----------Get_order_list---------------*/
 int	check_order_a(t_stack **stacks, int count);
-t_stack *last_data_list(t_stack **stacks)
+t_stack *last_data_list(t_stack **stacks);
+
+
+/*---------------sort_logic-------------*/
+void sort3(t_stack **stacks);
+void distribute(t_stack **stacks, int ac);
+
 
 /*-------------print---------------*/
 void print_list(t_stack *begin_list);

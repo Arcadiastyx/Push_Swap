@@ -6,7 +6,7 @@
 #    By: inaranjo <inaranjo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/15 14:25:38 by inaranjo          #+#    #+#              #
-#    Updated: 2023/03/31 11:54:25 by inaranjo         ###   ########.fr        #
+#    Updated: 2023/03/31 15:26:46 by inaranjo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRC =	main.c \
 		ra_rb_rr.c \
 		rra_rrb_rrr.c \
 		sa_sb_ss.c \
-		manage_order_list.c \
+		get_order_list.c \
 
 CC = gcc
 
